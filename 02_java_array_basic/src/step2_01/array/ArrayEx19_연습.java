@@ -37,7 +37,6 @@ public class ArrayEx19_연습 {
 				System.out.print("추가 할 값 입력 : ");
 				int data = scan.nextInt();
 				
-				
 				if (elementCnt == arr.length) {
 					System.out.println("더이상 추가 할 수 없습니다.");
 					continue;

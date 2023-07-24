@@ -34,49 +34,6 @@ public class ArrayEx22_연습 {
 			System.out.print("입력 : ");
 			selectMenu = scan.nextInt();
 			
-			if (selectMenu == 1) {
-				System.out.println("추가할 값을 입력 = ");
-				int num = scan.nextInt();
-				
-				if (elementCnt == arr.length) {
-					System.out.println("더이상 추가할 수 없습니다.");
-					continue;
-				}
-			
-				arr[elementCnt] = num;
-				elementCnt++;
-			}
-			else if (selectMenu == 2) {
-				System.out.println("삽입할 위치를 입력 = ");
-				int input = scan.nextInt();
-					if (input < 0 || input > arr.length) {
-						System.out.println("다시 입력해주세요.");
-						continue;
-					}
-					System.out.println("삽입할 값을 입력 = ");
-					int inputNum = scan.nextInt();
-					
-					for (int j = elementCnt; j > input ; j--) {
-						arr[j] = arr[j-1];
-						elementCnt++;
-					}
-			}
-			else if (selectMenu == 3) {
-				System.out.println("삭제할 위치를 입력 = ");
-				int del = scan.nextInt();
-					if (del < 0 || del > arr.length ) {
-						System.out.println("다시 입력해주세요.");
-						continue;
-					}
-					System.out.println("삭제할 값을 입력 = ");
-					int delNum = scan.nextInt();
-					
-					for (int i = elementCnt; i < arr.length; i++) {
-						arr[i] = arr[i+1] ;
-						elementCnt++;
-					}
-			}
-			
 		}
 		
 	}
